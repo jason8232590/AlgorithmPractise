@@ -5,6 +5,9 @@ package com.dx.algorithmpractise.queue;
  *   0 1 2 3 4
  *   假设head 在 2 ，tails 在 4 ， 这时候有个新元素入队，以前的话只能数据搬移，那么循环队列就可以，把新元素放在 0
  *   循环队列满了的判断条件就是 (tail + 1) % n = head
+ *
+ *
+ *   action: 循环队列满了的条件
  */
 public class CircleQueue {
     // 数组：items，数组大小：n
