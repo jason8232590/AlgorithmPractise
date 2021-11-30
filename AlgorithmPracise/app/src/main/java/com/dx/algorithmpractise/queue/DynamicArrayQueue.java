@@ -1,5 +1,11 @@
 package com.dx.algorithmpractise.queue;
 
+/**
+ * 动态搬移的顺序队列
+ * 1.如果是顺序队列（数组实现的），那么每次出队的时候也就意味，数组前面几个元素被取出，但是实际上仍然后会占用这空间，所以需要数据搬移，但是每次
+ * 出队都数据搬移，肯定就不划算，所以当数组满了，就来一次数据搬移
+ * 2.下面就改造enqueue
+ */
 public class DynamicArrayQueue {
     // 数组：items，数组大小：n
     private String[] items;
@@ -22,7 +28,7 @@ public class DynamicArrayQueue {
             if (head == 0) return false;
             // 数据搬移
             for (int i = head; i < tail; ++i) {
-                items[i-head] = items[i];
+                items[i - head] = items[i];
             }
             // 搬移完之后重新更新head和tail
             tail -= head;
