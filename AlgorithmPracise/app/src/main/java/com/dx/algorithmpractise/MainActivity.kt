@@ -2,7 +2,7 @@ package com.dx.algorithmpractise
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.dx.algorithmpractise.orderSort.QuickSort
+import com.dx.algorithmpractise.search.BinarySearch
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,8 +23,11 @@ class MainActivity : AppCompatActivity() {
 //        array.delete(3)
 //        array.printAll()
 //        QuickSort.doQuickSort(intArrayOf(6, 11, 3, 9, 8),5)
-        QuickSort.doQuickSort(intArrayOf(3, 2, 1, 4),4)
+//        QuickSort.doQuickSort(intArrayOf(3, 2, 1, 4),4)
 
 //        quickSort.doQuickSort(arrayOf(6, 11, 3, 9, 8),5)
+        var a: Int = 1 / 2;
+        var b: Int = 5 / 2;
+        BinarySearch.doBinarySearch(intArrayOf(1, 2, 3, 4, 5, 7), 6, 1)
     }
 }
